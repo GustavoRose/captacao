@@ -1,87 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grupo VIP Cheiro de Rosa 💌</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupo VIP - Cheiro de Rosa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      color: white;
       background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .container {
+      position: relative;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      position: relative;
-      overflow: hidden;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
     }
 
     .logo {
-      width: 140px;
-      margin-bottom: 1rem;
+      max-width: 160px;
+      margin-bottom: 25px;
     }
 
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.5rem;
-      color: #ff523f;
-      text-align: center;
-      margin-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #ff4f32;
     }
 
     p {
-      text-align: center;
+      font-size: 1em;
+      line-height: 1.5;
       max-width: 320px;
-      font-size: 1.1rem;
-      color: #f3f3f3;
+      margin-bottom: 25px;
     }
 
-    .cta {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background-color: #ff523f;
-      color: #fff;
+    .btn {
+      background-color: #ff4f32;
+      color: white;
       border: none;
+      padding: 14px 26px;
+      font-size: 1em;
       border-radius: 50px;
-      font-size: 1.1rem;
-      cursor: pointer;
       text-decoration: none;
-      transition: 0.3s;
+      transition: background-color 0.3s ease;
     }
 
-    .cta:hover {
-      background-color: #ff2f1f;
-    }
-
-    .petalas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://cdn.pixabay.com/photo/2018/03/11/12/38/rose-petals-3218143_1280.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.08;
-      pointer-events: none;
-      z-index: -1;
+    .btn:hover {
+      background-color: #e63c21;
     }
   </style>
 </head>
 <body>
-  <div class="petalas"></div>
+  <video autoplay muted loop playsinline id="video-bg">
+    <source src="VID_20250525_194356.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em background.
+  </video>
 
-  <img src="LOGO3.png" alt="Cheiro de Rosa" class="logo" />
+  <div class="overlay"></div>
 
-  <h1>Entre no nosso Grupo VIP</h1>
-  <p>Receba conteúdos exclusivos, ofertas secretas e participe da experiência mais íntima do Dia dos Namorados. 💖</p>
-
-  <a class="cta" href="https://wa.me/seu-link-aqui" target="_blank">Quero Participar</a>
+  <div class="container">
+    <img src="LOGO3.png" alt="Cheiro de Rosa" class="logo">
+    <h1>Grupo VIP Exclusivo 💌</h1>
+    <p>Entre para a nossa comunidade discreta e apaixonante. Conteúdos secretos, dicas sensuais e experiências inesquecíveis. Ninguém vê quem participa.</p>
+    <a href="https://wa.me/seu_link_personalizado" class="btn">Entrar agora</a>
+  </div>
 </body>
 </html>
