@@ -6,41 +6,64 @@
   <title>Grupo VIP - Mês dos Namorados</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
       background: #fff0f5;
       color: #2d2d2d;
+      overflow-x: hidden;
+      position: relative;
     }
+
     header {
       background-color: #ffeff6;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
+      position: relative;
+      z-index: 2;
     }
+
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0;
     }
+
     section {
-      padding: 2rem;
+      padding: 2rem 1rem;
       max-width: 600px;
       margin: auto;
       text-align: center;
+      position: relative;
+      z-index: 2;
     }
+
     section h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
     }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
     ul {
       list-style: none;
       padding: 0;
       margin: 2rem 0;
     }
+
     ul li {
       margin-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
+
     .cta {
       display: inline-block;
       padding: 1rem 2rem;
@@ -51,18 +74,73 @@
       font-weight: 600;
       transition: background-color 0.3s ease;
     }
+
     .cta:hover {
       background-color: #c2186a;
     }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #555;
-      margin-top: 2rem;
+      padding: 2rem 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Pétalas */
+    .petala {
+      position: fixed;
+      top: -50px;
+      width: 30px;
+      height: 30px;
+      background: url('https://cdn-icons-png.flaticon.com/512/2956/2956640.png') no-repeat center;
+      background-size: contain;
+      animation: cair 10s linear infinite;
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes cair {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      section h2 {
+        font-size: 1.1rem;
+      }
+      .cta {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- Pétalas -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      let petala = document.createElement('div');
+      petala.classList.add('petala');
+      petala.style.left = Math.random() * 100 + "vw";
+      petala.style.animationDelay = Math.random() * 10 + "s";
+      petala.style.animationDuration = 6 + Math.random() * 5 + "s";
+      document.body.appendChild(petala);
+    }
+  </script>
 
   <header>
     <h1>✨ Grupo VIP do Mês dos Namorados ✨</h1>
@@ -87,3 +165,4 @@
 
 </body>
 </html>
+
