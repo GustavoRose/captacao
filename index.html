@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Grupo VIP - Cheiro de Rosa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -12,15 +12,16 @@
       box-sizing: border-box;
     }
 
-    body, html {
+    html, body {
       font-family: 'Inter', sans-serif;
-      background-color: #000;
+      background: #000;
       color: white;
+      height: 100%;
       overflow-x: hidden;
     }
 
     body {
-      background-image: url('background.jpg'); /* renomeie sua imagem como background.jpg */
+      background-image: url('background.jpg'); /* sua imagem com pétalas */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -42,28 +43,27 @@
       min-height: 100dvh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-end;
+      align-items: flex-start;
       padding: 20px;
-      text-align: center;
     }
 
     .logo {
-      width: 140px;
-      margin-bottom: 20px;
+      width: 120px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8em;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.2em;
       color: #ff4f32;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1em;
+      font-size: 1.05em;
       max-width: 320px;
-      line-height: 1.5;
+      line-height: 1.6;
       margin-bottom: 25px;
     }
 
@@ -71,7 +71,7 @@
       background-color: #ff4f32;
       color: white;
       border: none;
-      padding: 14px 28px;
+      padding: 14px 26px;
       font-size: 1em;
       border-radius: 50px;
       text-decoration: none;
@@ -79,7 +79,18 @@
     }
 
     .btn:hover {
-      background-color: #e53b1f;
+      background-color: #e13c1f;
+    }
+
+    @media (min-width: 600px) {
+      .container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        font-size: 1.1em;
+      }
     }
   </style>
 </head>
@@ -89,8 +100,11 @@
 
   <div class="container">
     <img src="logo.png" alt="Cheiro de Rosa" class="logo" />
-    <h1>Grupo VIP 💌</h1>
-    <p>Uma comunidade secreta, romântica e exclusiva. Dicas íntimas, experiências únicas e total descrição.</p>
+    <h1>Mês dos Apaixonados 💌</h1>
+    <p>
+      Um grupo secreto e apaixonante. Aqui, os lançamentos mais sensuais chegam primeiro — só pra quem está dentro.
+      Viva junho com exclusividade, desejo e experiências que despertam.
+    </p>
     <a href="https://wa.me/seu_link_personalizado" class="btn">Entrar agora</a>
   </div>
 
