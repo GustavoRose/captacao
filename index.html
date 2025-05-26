@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Grupo VIP - Cheiro de Rosa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     body, html {
-      height: 100%;
       font-family: 'Inter', sans-serif;
-      color: white;
       background-color: #000;
+      color: white;
+      overflow-x: hidden;
     }
 
     #video-bg {
       position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
       object-fit: cover;
       z-index: -2;
     }
 
     .overlay {
       position: fixed;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.6);
@@ -37,8 +40,7 @@
     }
 
     .container {
-      position: relative;
-      height: 100vh;
+      min-height: 100dvh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -48,21 +50,21 @@
     }
 
     .logo {
-      max-width: 160px;
-      margin-bottom: 25px;
+      width: 140px;
+      margin-bottom: 20px;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2em;
-      margin-bottom: 15px;
+      font-size: 1.8em;
       color: #ff4f32;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 1em;
-      line-height: 1.5;
       max-width: 320px;
+      line-height: 1.5;
       margin-bottom: 25px;
     }
 
@@ -70,7 +72,7 @@
       background-color: #ff4f32;
       color: white;
       border: none;
-      padding: 14px 26px;
+      padding: 14px 28px;
       font-size: 1em;
       border-radius: 50px;
       text-decoration: none;
@@ -78,22 +80,22 @@
     }
 
     .btn:hover {
-      background-color: #e63c21;
+      background-color: #e53b1f;
     }
   </style>
 </head>
 <body>
   <video autoplay muted loop playsinline id="video-bg">
-    <source src="VID_20250525_194356.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos em background.
+    <source src="video.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo em background.
   </video>
 
   <div class="overlay"></div>
 
   <div class="container">
-    <img src="LOGO3.png" alt="Cheiro de Rosa" class="logo">
-    <h1>Grupo VIP Exclusivo 💌</h1>
-    <p>Entre para a nossa comunidade discreta e apaixonante. Conteúdos secretos, dicas sensuais e experiências inesquecíveis. Ninguém vê quem participa.</p>
+    <img src="logo.png" alt="Cheiro de Rosa" class="logo" />
+    <h1>Grupo VIP 💌</h1>
+    <p>Uma comunidade secreta, romântica e exclusiva. Dicas íntimas, experiências únicas e total descrição.</p>
     <a href="https://wa.me/seu_link_personalizado" class="btn">Entrar agora</a>
   </div>
 </body>
