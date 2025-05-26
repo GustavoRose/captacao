@@ -1,68 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grupo VIP – Cheiro de Rosa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo VIP Cheiro de Rosa 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap');
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #fff8fb;
-      color: #5c1a3f;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
-      text-align: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
+
     .logo {
-      width: 120px;
-      margin-bottom: 1.5rem;
+      width: 140px;
+      margin-bottom: 1rem;
     }
+
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.4rem;
-      color: #a0225c;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #ff523f;
+      text-align: center;
       margin-bottom: 0.5rem;
     }
+
     p {
-      max-width: 500px;
+      text-align: center;
+      max-width: 320px;
       font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: #5c1a3f;
+      color: #f3f3f3;
     }
-    .cta-button {
-      background-color: #a0225c;
-      color: white;
-      border: none;
+
+    .cta {
+      margin-top: 2rem;
       padding: 1rem 2rem;
-      border-radius: 30px;
-      font-size: 1rem;
+      background-color: #ff523f;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
       cursor: pointer;
-      transition: background 0.3s ease;
+      text-decoration: none;
+      transition: 0.3s;
     }
-    .cta-button:hover {
-      background-color: #82194b;
+
+    .cta:hover {
+      background-color: #ff2f1f;
     }
-    .footer {
-      font-size: 0.8rem;
-      margin-top: 3rem;
-      color: #a0225c;
+
+    .petalas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://cdn.pixabay.com/photo/2018/03/11/12/38/rose-petals-3218143_1280.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: -1;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Cheiro de Rosa" class="logo">
-  <h1>Entre para o Grupo VIP 💌</h1>
-  <p>O mês dos namorados começa com um convite especial. Acesse experiências únicas, ideias sensuais e produtos escolhidos para criar uma noite inesquecível.</p>
-  <a href="https://seulinkdeconvite.com" target="_blank">
-    <button class="cta-button">Quero fazer parte</button>
-  </a>
-  <div class="footer">
-    Exclusivo · Discreto · Limitado
-  </div>
+  <div class="petalas"></div>
+
+  <img src="LOGO3.png" alt="Cheiro de Rosa" class="logo" />
+
+  <h1>Entre no nosso Grupo VIP</h1>
+  <p>Receba conteúdos exclusivos, ofertas secretas e participe da experiência mais íntima do Dia dos Namorados. 💖</p>
+
+  <a class="cta" href="https://wa.me/seu-link-aqui" target="_blank">Quero Participar</a>
 </body>
 </html>
