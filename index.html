@@ -21,7 +21,7 @@
     }
 
     body {
-      background-image: url('background.jpg'); /* sua imagem com pétalas */
+      background-image: url('background.jpg'); /* Sua imagem de pétalas */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -43,8 +43,9 @@
       min-height: 100dvh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       padding: 20px;
     }
 
@@ -55,14 +56,15 @@
 
     h1 {
       font-family: 'Dancing Script', cursive;
-      font-size: 2.2em;
+      font-size: 2.5em;
       color: #ff4f32;
       margin-bottom: 10px;
+      text-shadow: 0 0 8px rgba(255, 79, 50, 0.7);
     }
 
     p {
-      font-size: 1.05em;
-      max-width: 320px;
+      font-size: 1.1em;
+      max-width: 360px;
       line-height: 1.6;
       margin-bottom: 25px;
     }
@@ -75,21 +77,20 @@
       font-size: 1em;
       border-radius: 50px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 12px rgba(255, 79, 50, 0.5);
     }
 
     .btn:hover {
       background-color: #e13c1f;
+      box-shadow: 0 0 16px rgba(255, 79, 50, 0.9);
     }
 
     @media (min-width: 600px) {
       .container {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      p {
-        font-size: 1.1em;
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px;
       }
     }
   </style>
@@ -102,10 +103,10 @@
     <img src="logo.png" alt="Cheiro de Rosa" class="logo" />
     <h1>Mês dos Apaixonados 💌</h1>
     <p>
-      Um grupo secreto e apaixonante. Aqui, os lançamentos mais sensuais chegam primeiro — só pra quem está dentro.
+      Uma comunidade secreta e apaixonante. Aqui, os lançamentos mais sensuais chegam primeiro — só pra quem está dentro.
       Viva junho com exclusividade, desejo e experiências que despertam.
     </p>
-    <a href="https://chat.whatsapp.com/FAf3HK2fnnM8Pd06Ox6rJm" class="btn">Entrar agora</a>
+    <a href="https://wa.me/seu_link_personalizado" class="btn">Entrar agora</a>
   </div>
 
 </body>
